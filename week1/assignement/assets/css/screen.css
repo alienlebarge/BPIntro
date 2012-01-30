@@ -1,8 +1,12 @@
 body {
     font: 1em "Lucida Grande", Lucida, Verdana, sans-serif;
-}nav {
-    background-color: #e1d3d3;
-    border: solid #b69898;
-    font: 1em "Lucida Grande", Lucida, Verdana, sans-serif;
 }
-
+nav {
+    background-color: #e1d3d3;
+    font: 1em "Lucida Grande", Lucida, Verdana, sans-serif;
+    border: 1px solid #b69898;
+    border-radius: 0.5em;
+}
+.hide {
+    display: none;
+}
