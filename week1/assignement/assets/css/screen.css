@@ -1,18 +1,34 @@
 body {
     font: 1em "Lucida Grande", Lucida, Verdana, sans-serif;
+    margin-top: 50px;
 }
-nav {
+
+nav ul, nav li {
+    display: inline;
+    padding:  0;
+}
+nav a {
     background-color: #e1d3d3;
     font: 1em "Lucida Grande", Lucida, Verdana, sans-serif;
     border: 1px solid #b69898;
     border-radius: 0.5em;
+    padding: 0.75em;
 }
 .hide {
     display: none;
 }
+
+p.info, p.success {
+    border-radius: 0.5em;
+    padding: 1em;
+}
 p.info {
     background-color: #d1e1ee;
-    border-color: #306ed2;
-    color: #190a5a;
-    border-radius: 0.5em;
+    color: #2c75b1;
+    border: 1px solid #9ac0e0;
+}
+p.success {
+    background-color: #d1eedb;
+    color: #3b764f;
+    border: 1px solid #8ad5a4;
 }
