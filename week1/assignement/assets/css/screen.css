@@ -52,6 +52,19 @@ nav a:hover {
 }
 
 /******************************
+ * Form
+ */
+
+label {
+    font-weight: bold;
+}
+
+input.text {
+    padding: 0.5em;
+    width: 150px;
+}
+
+/******************************
  * General & Inline Style
  */
 
