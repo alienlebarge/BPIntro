@@ -10,3 +10,9 @@ nav {
 .hide {
     display: none;
 }
+p.info {
+    background-color: #d1e1ee;
+    border-color: #306ed2;
+    color: #190a5a;
+    border-radius: 0.5em;
+}
