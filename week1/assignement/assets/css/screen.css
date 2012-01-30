@@ -99,6 +99,10 @@ input.text {
     display: none;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 p.info, p.success {
     border-radius: 0.5em;
     padding: 1em;
