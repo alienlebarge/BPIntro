@@ -52,6 +52,33 @@ nav a:hover {
 }
 
 /******************************
+ * Footer
+ */
+
+footer {
+    clear: both;
+    width: 100%;
+    border-top: 1px solid #999999;
+}
+
+footer, footer a {
+    color: #666;
+    font-size: 0.85em;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+/******************************
+ * List & Definition
+ */
+
+dd {
+    font-style: italic;
+}
+
+/******************************
  * Form
  */
 
