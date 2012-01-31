@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Calendar</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    <style>
+
+        body {
+            font: 1em "Lucida Grande", Lucida, Verdana, sans-serif;
+            margin: 1em;
+            padding: 0;
+        }
+
+        /* all */
+        ol, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* month */
+
+        ol li ol li div {
+            clear: both;
+            padding: 2em 0 1em 0;
+        }
+        
+        /* day */
+        ol li ol li ol {
+            float: left;
+        }
+
+        ol li ol li ol li {
+            display: inline;
+            float: left;
+            padding: 0.5em;
+            border-top: 1px solid #333333;
+            border-right: 1px solid #333333;
+        }
+
+        .first-day-month {
+            border-left: 1px solid #333333;
+            float: right;
+        }
+
+        .first-day-week {
+            border-left: 1px solid #333333;
+            clear: both;
+        }
+
+        .last-day-month {
+            border-bottom: 1px solid #333333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calendar CSS test</h1>
+    <div id="calendar">
+        <ol start="2012">
+            <li>Year
+                <ol>
+                    <li><div>January</div>
+                        <ol>
+                            <li class="first-day-month">Sunday</li>
+                            <li class="first-day-week">Monday</li>
+                            <li>Tuesday</li>
+                            <li>Wednesday</li>
+                            <li>Thursday</li>
+                            <li>Friday</li>
+                            <li>Saturday</li>
+                            <li>Sunday</li>
+                            <li class="first-day-week">Monday</li>
+                            <li>Tuesday</li>
+                            <li>Wednesday</li>
+                            <li>Thursday</li>
+                            <li>Friday</li>
+                            <li>Saturday</li>
+                            <li>Sunday</li>
+                            <li class="first-day-week">Monday</li>
+                            <li>Tuesday</li>
+                            <li>Wednesday</li>
+                            <li>Thursday</li>
+                            <li>Friday</li>
+                            <li>Saturday</li>
+                            <li>Sunday</li>
+                            <li class="first-day-week">Monday</li>
+                            <li>Tuesday</li>
+                            <li class="last-day-month">Wednesday</li>
+                            <li class="last-day-month">Thursday</li>
+                            <li class="last-day-month">Friday</li>
+                            <li class="last-day-month">Saturday</li>
+                            <li class="last-day-month">Sunday</li>
+                            <li class="first-day-week last-day-month">Monday</li>
+                            <li class="last-day-month">Tuesday</li>
+                        </ol>
+                    </li>
+                    <li><div>February</div>
+                        <ol>
+                            <li>Wednesday</li>
+                            <li>Thursday</li>
+                            <li>...</li>
+                        </ol>
+                    <li><div>March</div></li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
