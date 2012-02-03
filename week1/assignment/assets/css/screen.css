@@ -84,6 +84,7 @@ dd {
 
 label {
     font-weight: bold;
+    display: block;
 }
 
 input.text {
@@ -96,7 +97,10 @@ input.text {
  */
 
 .hide {
-    display: none;
+    text-indent: -999em;
+    margin: 0;
+    padding: 0;
+    height: 0;
 }
 
 a:hover {
