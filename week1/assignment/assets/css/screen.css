@@ -84,6 +84,7 @@ dd {
 
 label {
     font-weight: bold;
+    display: block;
 }
 
 input.text {
