@@ -23,6 +23,7 @@ header {
 
 header h1 {
     margin: 0;
+    font-size: 1.1em;
 }
 
 /******************************
@@ -30,26 +31,61 @@ header h1 {
  */
 
 nav {
-    border-bottom: 1px solid #cccccc;
-    background-color: #ededed;
-    padding: 1em;
+    background-color: #f3eed3;
+    border-bottom: 1px solid #f2d6af;
+    padding: 1.5em 0.5em;;
 }
 
-nav ul {
-    margin: 0;
-    padding: 0;
+nav ul, nav li {
+    display: inline;
+    padding:  0;
+}
+
+nav a {
+    background-color: #e1d591;
+    border: 1px solid #635524;
+    border-radius: 0.5em;
+    padding: 0.75em;
+    color: #635524;
+    text-decoration: none;
+    margin-right: 1em;
 }
 
 /******************************
- * Interaction
+ * Secondary Menu
+ */
+
+#secondary-menu {
+    background-color: #f3eed3;
+    border-top: 1px solid #635524;
+}
+
+#secondary-menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+#secondary-menu li {
+    background-color: #e1d591;
+    border-bottom: 1px solid #635524;
+}
+
+#secondary-menu a {
+    color: #635524;
+    text-decoration: none;
+    width: 98%;
+    padding: 1em 1%;
+    display: block;
+}
+
+/******************************
+ * Footer
  */
 
 footer {
     border-top: 1px solid #cccccc;
     background-color: #ededed;
 }
-
-
 
 /******************************
  * Interaction
@@ -81,4 +117,15 @@ dd {
 }
 dd.last {
     padding-bottom: 0.85em;
+}
+
+/******************************
+ * General style
+ */
+
+.hide {
+    text-indent: -999em;
+    margin: 0;
+    padding: 0;
+    height: 0;
 }
