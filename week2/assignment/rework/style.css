@@ -134,7 +134,10 @@ img {
  */
 
 dt {
-    background: url(music.png) left / 1em 1em no-repeat;
+    background-image: url(music.gif);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 1em 1em;
     padding-left: 1.25em;
 }
 dd {
