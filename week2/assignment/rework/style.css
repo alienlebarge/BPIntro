@@ -30,7 +30,7 @@ header h1 {
 nav {
     background-color: #f3eed3;
     border-bottom: 1px solid #f2d6af;
-    padding: 1.5em 0.5em;;
+    padding: 1em 0.5em;
 }
 
 nav ul, nav li {
@@ -42,10 +42,30 @@ nav a {
     background-color: #e1d591;
     border: 1px solid #635524;
     border-radius: 0.5em;
-    padding: 0.75em;
+    padding: 0.5em 0.75em;
     color: #635524;
     text-decoration: none;
-    margin-right: 1em;
+    margin-right: 0.5em;
+}
+
+/******************************
+ * Breadcrump
+ */
+
+#breadcrump  {
+    background-color: #ededed;
+    padding: 0.5em 0.5em;
+    border-bottom: 1px solid #cccccc;
+}
+
+#breadcrump ul, #breadcrump li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+#breadcrump span:after {
+    content: ' /';
 }
 
 /******************************
@@ -73,6 +93,14 @@ nav a {
     width: 98%;
     padding: 1em 1%;
     display: block;
+}
+
+#secondary-menu li.top {
+    background-color: #ededed;
+    border-bottom: 1px solid #cccccc;
+}
+#secondary-menu li.top a {
+    color: #333333;
 }
 
 /******************************
