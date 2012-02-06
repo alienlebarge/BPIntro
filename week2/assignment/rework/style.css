@@ -1,5 +1,5 @@
 /******************************
- * Structure
+ * Body
  */
 
 body {
@@ -8,15 +8,48 @@ body {
     padding: 0;
 }
 
+/******************************
+ * Header
+ */
+
 header {
     color: #ffffff;
-    background: url(beethoven-background.jpg) top right / auto 100% no-repeat #000000;
+    background-color: #000000;
+    background-image: url(beethoven-background.jpg);
+    background-size: auto 100%;
+    background-position: top right;
+    background-repeat: no-repeat;
 }
+
+header h1 {
+    margin: 0;
+}
+
+/******************************
+ * Navigation
+ */
+
+nav {
+    border-bottom: 1px solid #cccccc;
+    background-color: #ededed;
+    padding: 1em;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+/******************************
+ * Interaction
+ */
 
 footer {
     border-top: 1px solid #cccccc;
     background-color: #ededed;
 }
+
+
 
 /******************************
  * Interaction
