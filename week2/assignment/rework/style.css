@@ -9,11 +9,8 @@ body {
 }
 
 header {
-    background-color: #000000;
-    background-image: url(beethoven-background.jpg);
-    background-position: top right;
-    background-repeat: no-repeat;
     color: #ffffff;
+    background: url(beethoven-background.jpg) top right / auto 100% no-repeat #000000;
 }
 
 footer {
