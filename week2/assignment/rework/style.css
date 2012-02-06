@@ -12,18 +12,15 @@ body {
  * Header
  */
 
-header {
+header h1 {
+    margin: 0;
+    font-size: 1.1em;
     color: #ffffff;
     background-color: #000000;
     background-image: url(beethoven-background.jpg);
     background-size: auto 100%;
     background-position: top right;
     background-repeat: no-repeat;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 1.1em;
 }
 
 /******************************
