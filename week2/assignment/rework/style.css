@@ -32,8 +32,8 @@ img {
  */
 
 dt {
-    background: url(music.png) left no-repeat;
-    padding-left: 1.5em;
+    background: url(music.png) left / 1em 1em no-repeat;
+    padding-left: 1.25em;
 }
 dd {
     font-style: italic;
