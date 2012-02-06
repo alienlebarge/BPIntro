@@ -1,0 +1,173 @@
+/******************************
+ * Body
+ */
+
+body {
+    font: 1em "Lucida Grande", Lucida, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/******************************
+ * Header
+ */
+
+header h1 {
+    margin: 0;
+    font-size: 1.1em;
+    color: #ffffff;
+    background-color: #000000;
+    background-image: url(beethoven-background.jpg);
+    background-size: auto 100%;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+/******************************
+ * Navigation
+ */
+
+nav {
+    background-color: #f3eed3;
+    border-bottom: 1px solid #f2d6af;
+    padding: 1em 0.5em;
+}
+
+nav ul, nav li {
+    display: inline;
+    padding:  0;
+}
+
+nav a {
+    background-color: #e1d591;
+    border: 1px solid #635524;
+    border-radius: 0.5em;
+    padding: 0.5em 0.75em;
+    color: #635524;
+    text-decoration: none;
+    margin-right: 0.5em;
+}
+
+/******************************
+ * Breadcrump
+ */
+
+#breadcrump  {
+    background-color: #ededed;
+    padding: 0.5em 0.5em;
+    border-bottom: 1px solid #cccccc;
+}
+
+#breadcrump ul, #breadcrump li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+#breadcrump span:after {
+    content: ' /';
+}
+
+/******************************
+ * content
+ */
+
+#content {
+    margin: 0 0.5em;
+}
+
+/******************************
+ * Secondary Menu
+ */
+
+#secondary-menu {
+    background-color: #f3eed3;
+    border-top: 1px solid #635524;
+}
+
+#secondary-menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+#secondary-menu li {
+    background-color: #e1d591;
+    border-bottom: 1px solid #635524;
+}
+
+#secondary-menu a {
+    color: #635524;
+    text-decoration: none;
+    width: 98%;
+    padding: 1em 1%;
+    display: block;
+}
+
+#secondary-menu li.top {
+    background-color: #ededed;
+    border-bottom: 1px solid #cccccc;
+}
+#secondary-menu li.top a {
+    color: #333333;
+}
+
+/******************************
+ * Footer
+ */
+
+footer {
+    border-top: 1px solid #cccccc;
+    background-color: #ededed;
+}
+
+footer p {
+    font-size: 0.9em;
+    font-style: italic;
+    margin: 0.5em;
+}
+
+/******************************
+ * Interaction
+ */
+
+a:hover, a:focus, a:active {
+    background-color: #ff8b64;
+}
+
+/******************************
+ * Image
+ */
+
+/* Prevent image to be bigger than viewport*/
+img {
+    max-width: 100%;
+}
+
+/******************************
+ * List
+ */
+
+dt {
+    background-image: url(music.gif);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 1em 1em;
+    padding-left: 1.25em;
+}
+dd {
+    font-style: italic;
+}
+dd.last {
+    padding-bottom: 0.85em;
+}
+
+/******************************
+ * General style
+ */
+
+.hide {
+    text-indent: -999em;
+    margin: 0;
+    padding: 0;
+    height: 0;
+}
