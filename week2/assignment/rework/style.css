@@ -19,6 +19,14 @@ footer {
 }
 
 /******************************
+ * Interaction
+ */
+
+a:hover, a:focus, a:active {
+    background-color: #ff8b64;
+}
+
+/******************************
  * Image
  */
 
