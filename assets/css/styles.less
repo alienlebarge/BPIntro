@@ -1,0 +1,128 @@
+// variables
+@fontColor: #000000;
+@linkColor: #E01B6A;
+@headerColor: #37151a;
+
+
+body {
+    margin-top: 1.0em;
+    background-color: #eeeeee;
+    font-family: Helvetica, Arial, FreeSans, verdana, sans-serif;
+    color: @fontColor;
+}
+
+#container {
+    margin: 0 auto;
+    width: 700px;
+}
+
+h1 {
+    font-size: 3.8em; 
+    color: @headerColor;
+    margin-bottom: 3px; 
+    .small {
+        font-size: 0.4em;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+h2 {
+    font-size: 1.5em;
+    color: @headerColor;
+}
+h3 {
+    text-align: center;
+    color: @headerColor;
+}
+a {
+    color: @linkColor;
+}
+.description {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-style: italic;
+}
+.download {
+    float: right;
+}
+nav {
+    border: 1px solid #E01B6A;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background-color: #FFD9E8;
+
+    h2 {
+        margin-top: 0;
+    }
+}
+pre {
+    background: #000;
+    color: #fff;
+    padding: 15px;
+}
+hr {
+    border: 0;
+    width: 80%;
+    border-bottom: 1px solid #aaa;
+}
+.footer {
+    text-align:center;
+    padding-top:30px;
+    font-style: italic;
+}
+
+.hide {
+    text-indent: -999em;
+    margin: 0;
+    padding: 0;
+    height: 0;
+}
+
+.navbar {
+
+    @navLinkColor: #cccccc;
+
+    background-color: #2C2C2C;
+    border-radius: 0.25em;
+    padding: 0.25em 1em;
+    
+    a {
+        text-decoration: none;
+        color: @navLinkColor;
+        margin: 0 .25em;
+        &:hover {
+            color: lighten(@navLinkColor, 50%);
+        }
+    }
+
+    h1,h2,h3 {
+        .hide;
+    }
+
+    ul, li {
+        margin: 0;
+        padding: 0;
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .desktopOnly {
+        display: none;
+    }
+
+    .download {
+        .desktopOnly;
+    }
+
+    body {
+        margin-top: 0;
+    }
+
+    #container {
+        width: 100%;
+    }
+}
