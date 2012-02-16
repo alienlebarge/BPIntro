@@ -1,0 +1,65 @@
+/******************************
+ * Header
+ */
+
+header h1 {
+    font-size: 2em;
+    padding: 0.5em;
+    background-image: url(../image/beethoven-background.jpg);
+    background-size: auto 100%;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+/******************************
+ * Breadcrump
+ */
+
+#breadcrump h2 {
+    font-size: 1em;
+    font-weight: normal;
+    display: inline;
+    text-indent: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#breadcrump h2:after {
+    content: ' :';
+}
+
+/******************************
+ * container & content
+ */
+
+#container {
+    width: 100%;
+    
+}
+
+#content {
+    float : right;
+    margin: 0;
+    width: 80%;
+}
+
+aside {
+    float: left;
+    width: 20%;
+}
+
+/******************************
+ * List
+ */
+
+li.top {
+    display: none;
+}
+
+/******************************
+ * Footer
+ */
+
+footer {
+    clear: both;
+}

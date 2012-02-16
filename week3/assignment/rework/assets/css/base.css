@@ -17,10 +17,6 @@ header h1 {
     font-size: 1.1em;
     color: #ffffff;
     background-color: #000000;
-    background-image: url(../image/beethoven-background.jpg);
-    background-size: auto 100%;
-    background-position: top right;
-    background-repeat: no-repeat;
 }
 
 /******************************
@@ -68,12 +64,14 @@ nav a {
     content: ' /';
 }
 
+/* "#breadcrump h2" is hide -> see General style */
+
 /******************************
  * content
  */
 
-#content {
-    margin: 0 0.5em;
+#content div > * {
+    margin-left: 0.5em;
 }
 
 /******************************
@@ -105,7 +103,6 @@ nav a {
 
 #secondary-menu li.top {
     background-color: #ededed;
-    border-bottom: 1px solid #cccccc;
 }
 #secondary-menu li.top a {
     color: #333333;
@@ -118,12 +115,12 @@ nav a {
 footer {
     border-top: 1px solid #cccccc;
     background-color: #ededed;
+    padding: 0.5em;
 }
 
 footer p {
     font-size: 0.9em;
     font-style: italic;
-    margin: 0.5em;
 }
 
 /******************************
@@ -165,7 +162,7 @@ dd.last {
  * General style
  */
 
-.hide {
+.hide, #breadcrump h2 {
     text-indent: -999em;
     margin: 0;
     padding: 0;
