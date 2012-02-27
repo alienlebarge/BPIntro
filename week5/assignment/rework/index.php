@@ -1,3 +1,8 @@
+<?php
+    header("Content-Type: text/javascript; charset=utf-8");
+    header("Cache-Control: max-age=31536000, public");
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -73,6 +78,8 @@
         a
         boulevard stretching before it but Berlin does not have the same "obviously planned" layout as Canberra and
         Washington D.C.</p>
+
+
 
     <figure>
         <img src="assets/images/palace-of-westminster.jpg" width="400" height="267" alt="The Palace of Westminster, London"/>
