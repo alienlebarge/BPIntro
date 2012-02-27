@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 
 BPIntro.esproj/Project.espressostorage
 BPIntro.esproj/user.cedricaellen.espressostorage
 *.idea
 week1/.DS_Store
+=======
+
+BPIntro.esproj/Project.espressostorage
+BPIntro.esproj/user.cedricaellen.espressostorage
+*.idea
+*.DS_Store
+>>>>>>> master
