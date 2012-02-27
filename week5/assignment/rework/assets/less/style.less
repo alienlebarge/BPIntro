@@ -3,80 +3,14 @@ body {
     font-family:arial, verdana, trebuchet, sans-serif;
 }
 
-// Table
-table {
-    width:15em;
-    border-collapse:collapse
-}
-td {
-    border:solid thin black;
-    padding:0.5em
-}
-
-// Caption
-caption {
-    caption-side:bottom;
-    width:15em;
-    padding-top:0.5em
-}
-caption span {
-    font-size:smaller
-}
-
-
-p {
-    margin-bottom: 1em
-}
-p.revision {
-    text-align:right; font-style:italic
-}
-
-div.imgHolder {
-    width:570px;
-    margin:0 auto;
-    text-align:center;
-    
-    p.caption {
-        font-size:smaller;
-        font-weight:bold;
-
-        img {
-            border-width:0;
-            margin-right:0.5em;
-        }
-    }
-
-    img {
-        border-top-width:4px;
-        border-top-color: #cccccc;
-        border-top-style: solid;
-        border-left-width:4px;
-        border-left-color: #cccccc;
-        border-left-style: solid;
-        border-right-width:4px;
-        border-right-color: #888888;
-        border-right-style: solid;
-        border-bottom-width:4px;
-        border-bottom-color: #888888;
-        border-bottom-style: solid;
-    }
-}
-
 // Flags
 .flag {
-    width: 16px;
-    height: 11px;
-    background:url(flags.png) no-repeat;
-    .flag-au {
-        background-position: -16px 0;
-    }
-    .flag-de {
-        background-position: -32px 0;
-    }
-    .flag-gb {
-        background-position: 0 -11px;
-    }
-    .flag-us {
-        background-position: -16px -11px;
-    }
+	width: 16px;
+	height: 11px;
+	background:url(../images/flags.png) no-repeat;
 }
+
+.flag.flag-au {background-position: -16px 0;}
+.flag.flag-de {background-position: -32px 0;}
+.flag.flag-gb {background-position: 0 -11px;}
+.flag.flag-us {background-position: -16px -11px;}
