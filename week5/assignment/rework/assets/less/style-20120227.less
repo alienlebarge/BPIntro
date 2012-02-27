@@ -1,11 +1,45 @@
+// variable
+@linkcolor: #1BA5E0;
+
 // Body
 body {
     font-family:arial, verdana, trebuchet, sans-serif;
     font-size: 1em;
 }
 
+// Link
+a {
+    color: @linkcolor;
+
+    &:hover {
+        color: darken(@linkcolor, 20%);
+        text-shadow: 0 1px 4px @linkcolor;
+    }
+
+    &:focus {
+        color: #ffffff;
+        background-color: @linkcolor;
+        border-radius: 0.05em;
+    }
+}
+
+// Image
 figure {
-    max-width: 400px;
+    max-width: 25%;
+    
+    a {
+
+        img {
+            border: 1px solid #cccccc;
+            padding: 0.25em;
+            border-radius: 0.5em;
+
+            &:hover, &:focus {
+                border: 1px solid darken(@linkcolor, 20%);
+                box-shadow: 0 1px 4px @linkcolor;
+            }
+        }
+    }
 }
 
 .left {
@@ -39,5 +73,9 @@ figure {
 @media (max-width: 600px) {
     .right {
         float: left;
+    }
+
+    figure {
+        max-width: 100%;
     }
 }
