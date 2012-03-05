@@ -23,6 +23,7 @@ include($root . '/inc/switcher.php');
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title><?php echoSwitch('Desktop Page', 'Mobile Page'); ?></title>
     <link rel="canonical" href="<?php echo $full_path; ?>" />
     <link rel="stylesheet" type="text/css" href="<?php echoSwitch('screen_styles', 'mobile_styles'); ?>.css" />
@@ -33,37 +34,30 @@ include($root . '/inc/switcher.php');
 </head>
 <body>
 <p id="mob_switch"><a href="<?php echo $current_file['basename']; ?>?m=<?php echoSwitch('1', '0'); ?>"><?php echoSwitch('Mobile View', 'Desktop View'); ?></a> (changes will become definitive after a delay of <?php echo $maxage; ?> seconds or a reload of the page)</p>
-<h1><?php echoSwitch('Desktop', 'Mobile'); ?> Presentation</h1>
-<p>This static page represents the <?php echoSwitch('desktop', 'mobile'); ?> presentation of the resource available at <?php echo $full_path; ?>.</p>
+
 <?php
 echoSwitch(
 <<<DESKTOP
 
-<h2>Content with quotation marks</h2>
-<p id="sample">In 'reprehenderit' in voluptate lorem ipsum dolor sit amet: "consectetur adipisicing elit". Ut aliquip ex ea commodo consequat. Sed do eiusmod tempor incididunt cupidatat non proident, in reprehenderit in voluptate. Ut enim ad minim veniam, ullamco laboris nisi mollit anim id est laborum.</p>
-<p>Eu fugiat nulla pariatur. Duis aute irure dolor lorem ipsum dolor sit amet, sunt in culpa. Velit esse cillum dolore excepteur sint occaecat qui officia deserunt. Eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit in voluptate ullamco laboris nisi.</p>
-<p>Ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, in reprehenderit in voluptate excepteur sint occaecat. Ut aliquip ex ea commodo consequat. Duis aute irure dolor ut enim ad minim veniam, ullamco laboris nisi.</p>
+<h1></h1>
+
 
 DESKTOP
 ,
 <<<MOBILE
 
-<h2>C&eacute;dric's contact informations</h2>
-<div class="vcard">
-    <p class="fn">
-        <a class="fn" href="#">C&eacute;dric Aellen</a>
-    <p>
-    <address class="vcard">
+<h1>C&eacute;dric's contact informations</h1>
+<div>
+    <adress class="vcard">
         <span class="fn">C&eacute;dric Aellen</span>
-        <a class="url">www.alienlebarge.ch</a>
+        <a class="url large button" href="http://www.alienlebarge.ch/" title="Go to alienlebarge.ch">visit my blog</a>
         <span class="street-address">Chemin des Fleurs de Lys 38</span>
         <span class="region">Canton de Vaud</span>
         <span class="postal-code">1350</span> <span class="locality">Orbe</span>
         <span class="country-name">Switzerland</span>
         <span class="tel">+ 41 (0) 24 123 45 67</span>
-        <a class="email" href="mailto:cedric.aellengalienlebarge.ch">cedric.aellen@alienlebarge.ch</span>
-    </address>
-    <p class="tel">+41 (0)XXXX XXXXXX</p>
+        <a class="email large button" href="mailto:cedric.aellengalienlebarge.ch">send me an email</a>
+    </adress>
 </div>
 
 MOBILE
