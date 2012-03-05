@@ -39,14 +39,49 @@ include($root . '/inc/switcher.php');
 echoSwitch(
 <<<DESKTOP
 
-<h1></h1>
+<h1>C&eacute;dric Aellen's profil</h1>
+
+<h2>Bio</h2>
 
 
-DESKTOP
-,
-<<<MOBILE
+<figure>
+  <img src="assets/img/portrait.jpg" width="800" height="580" alt="A portrait of Cedric"/>
+  <figcaption>This portrait of C&eacute;dric was taken in Qu&eacute;bec</figcaption>
+</figure>
 
-<h1>C&eacute;dric's contact informations</h1>
+<p>Once upon a time ... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis lacinia est, eu condimentum felis scelerisque in. Nullam volutpat interdum ipsum, quis viverra massa gravida vitae. Cras sit amet accumsan arcu. Donec eu diam eu tortor porta euismod. Aliquam euismod luctus mauris, vel imperdiet mi egestas nec. Donec mattis semper nisi, dapibus porta arcu semper ac. Curabitur sit amet augue lectus. Aenean ultrices velit quis nibh auctor at consectetur nulla pulvinar. Duis porttitor vestibulum sollicitudin. Donec vehicula vestibulum tortor, vel imperdiet libero feugiat a. Maecenas viverra facilisis turpis, at dapibus neque faucibus vel.</p>
+
+<h2>Orbe, my town</h2>
+
+<p>C&eacute;dric live in the small town. Founded by roman, Orbe .... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis lacinia est, eu condimentum felis scelerisque in. Nullam volutpat interdum ipsum, quis viverra massa gravida vitae. Cras sit amet accumsan arcu. Donec eu diam eu tortor porta euismod. Aliquam euismod luctus mauris, vel imperdiet mi egestas nec. Donec mattis semper nisi, dapibus porta arcu semper ac. Curabitur sit amet augue lectus. Aenean ultrices velit quis nibh auctor at consectetur nulla pulvinar. Duis porttitor vestibulum sollicitudin. Donec vehicula vestibulum tortor, vel imperdiet libero feugiat a. Maecenas viverra facilisis turpis, at dapibus neque faucibus vel.</p>
+
+<h2>Studies</h2>
+
+<ul>
+    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+    <li>Vestibulum commodo consequat magna, nec dignissim leo semper at.</li>
+    <li>Donec placerat risus eget lacus fringilla sit amet tincidunt sem dapibus.</li>
+    <li>Suspendisse sit amet nisl ac quam accumsan elementum.</li>
+    <li>Praesent scelerisque diam ac arcu ornare quis volutpat odio sodales.</li>
+    <li>Sed eget sem tortor, vitae mattis lorem.</li>
+    <li>Phasellus convallis porttitor orci, ac congue nibh scelerisque eget.</li>
+    <li>In sed nulla ut nunc ultricies laoreet et at lorem.</li>
+    <li>Sed vel neque ullamcorper elit tincidunt vulputate.</li>
+    <li>Praesent quis sapien ac urna pretium sollicitudin eu eget quam.</li>
+    <li>Nulla congue semper ipsum, sed feugiat dui sollicitudin ac.</li>
+    <li>Maecenas sit amet enim neque, sed ultrices augue.</li>
+    <li>Proin in nisl orci, sed sodales sapien.</li>
+    <li>Nam molestie sapien vitae est aliquet sit amet ultricies velit sollicitudin.</li>
+    <li>Maecenas eu elit nisl, in mattis tellus.</li>
+</ul>
+
+<h2>etc...</h2>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis lacinia est, eu condimentum felis scelerisque in. Nullam volutpat interdum ipsum, quis viverra massa gravida vitae. Cras sit amet accumsan arcu. Donec eu diam eu tortor porta euismod. Aliquam euismod luctus mauris, vel imperdiet mi egestas nec. Donec mattis semper nisi, dapibus porta arcu semper ac. Curabitur sit amet augue lectus. Aenean ultrices velit quis nibh auctor at consectetur nulla pulvinar. Duis porttitor vestibulum sollicitudin. Donec vehicula vestibulum tortor, vel imperdiet libero feugiat a. Maecenas viverra facilisis turpis, at dapibus neque faucibus vel.</p>
+
+
+<h2>Contact</h2>
+
 <div>
     <adress class="vcard">
         <span class="fn">C&eacute;dric Aellen</span>
@@ -56,12 +91,33 @@ DESKTOP
         <span class="postal-code">1350</span> <span class="locality">Orbe</span>
         <span class="country-name">Switzerland</span>
         <span class="tel">+ 41 (0) 24 123 45 67</span>
-        <a class="email large button" href="mailto:cedric.aellengalienlebarge.ch">send me an email</a>
+        <a class="email large button" href="mailto:cedric.aellen@alienlebarge.ch">send me an email</a>
+    </adress>
+</div>
+
+
+DESKTOP
+,
+<<<MOBILE
+
+<h1>C&eacute;dric's contact informations</h1>
+
+<div>
+    <adress class="vcard">
+        <span class="fn">C&eacute;dric Aellen</span>
+        <a class="url large button" href="http://www.alienlebarge.ch/" title="Go to alienlebarge.ch">visit my blog</a>
+        <span class="street-address">Chemin des Fleurs de Lys 38</span>
+        <span class="region">Canton de Vaud</span>
+        <span class="postal-code">1350</span> <span class="locality">Orbe</span>
+        <span class="country-name">Switzerland</span>
+        <span class="tel">+ 41 (0) 24 123 45 67</span>
+        <a class="email large button" href="mailto:cedric.aellen@alienlebarge.ch">send me an email</a>
     </adress>
 </div>
 
 MOBILE
 ); ?>
+
 
 <!-- Read this comment about placing content with quotation marks:
 
