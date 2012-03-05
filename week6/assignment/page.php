@@ -22,9 +22,14 @@ include($root . '/inc/switcher.php');
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title><?php echoSwitch('Desktop Page', 'Mobile Page'); ?></title>
-  <link rel="canonical" href="<?php echo $full_path; ?>" />
-  <link rel="stylesheet" type="text/css" href="<?php echoSwitch('screen_styles', 'mobile_styles'); ?>.css" />
+    <meta charset="utf-8">
+    <title><?php echoSwitch('Desktop Page', 'Mobile Page'); ?></title>
+    <link rel="canonical" href="<?php echo $full_path; ?>" />
+    <link rel="stylesheet" type="text/css" href="<?php echoSwitch('screen_styles', 'mobile_styles'); ?>.css" />
+    <?php
+    // add script if browser older than IE9
+    echoSwitch('<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script><![endif]-->','');
+    ?>
 </head>
 <body>
 <p id="mob_switch"><a href="<?php echo $current_file['basename']; ?>?m=<?php echoSwitch('1', '0'); ?>"><?php echoSwitch('Mobile View', 'Desktop View'); ?></a> (changes will become definitive after a delay of <?php echo $maxage; ?> seconds or a reload of the page)</p>
@@ -43,12 +48,26 @@ DESKTOP
 ,
 <<<MOBILE
 
-<h2>Content with quotation marks</h2>
-<p id="sample">In 'reprehenderit' in voluptate lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut aliquip ex ea commodo consequat. Sed do eiusmod tempor incididunt cupidatat non proident, in reprehenderit in voluptate. Ut enim ad minim veniam, ullamco laboris nisi mollit anim id est laborum.</p>
+<h2>C&eacute;dric's contact informations</h2>
+<div class="vcard">
+    <p class="fn">
+        <a class="fn" href="#">C&eacute;dric Aellen</a>
+    <p>
+    <address class="vcard">
+        <span class="fn">C&eacute;dric Aellen</span>
+        <a class="url">www.alienlebarge.ch</a>
+        <span class="street-address">Chemin des Fleurs de Lys 38</span>
+        <span class="region">Canton de Vaud</span>
+        <span class="postal-code">1350</span> <span class="locality">Orbe</span>
+        <span class="country-name">Switzerland</span>
+        <span class="tel">+ 41 (0) 24 123 45 67</span>
+        <a class="email" href="mailto:cedric.aellengalienlebarge.ch">cedric.aellen@alienlebarge.ch</span>
+    </address>
+    <p class="tel">+41 (0)XXXX XXXXXX</p>
+</div>
 
 MOBILE
 ); ?>
-<p><a href="page2.php">PAGE 2</a></p>
 
 <!-- Read this comment about placing content with quotation marks:
 
