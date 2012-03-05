@@ -1,0 +1,31 @@
+body {
+    font: 1em "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
+figure {
+    float: right;
+    border: 1px solid #ccc;
+    border-radius: 0.25em;
+    padding: 0.25em;
+
+}
+
+div {
+    clear: both;
+
+    .vcard {
+        span, a {
+            &:first-child {
+                margin-left: 1em;
+            }
+            border-right: 1px solid #ccc;
+            margin-right: 1em;
+            padding-right: 1em;
+
+            &:last-child {
+                padding-right: 0;
+                border-right: none;
+            }
+        }
+    }
+}
