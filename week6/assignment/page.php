@@ -19,9 +19,8 @@ $file = __FILE__;
 //include required by the mobile-desktop switch script:
 include($root . '/inc/switcher.php');
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN"
-  "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <title><?php echoSwitch('Desktop Page', 'Mobile Page'); ?></title>
   <link rel="canonical" href="<?php echo $full_path; ?>" />
