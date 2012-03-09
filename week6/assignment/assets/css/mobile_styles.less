@@ -1,0 +1,84 @@
+@import "mobile_boilerplate.less";
+
+// variables
+
+@titleBackground: #81ACB8;
+
+.container > * {
+    padding: 0 1%;
+}
+
+.titlestyle {
+    border-top: 1px solid @titleBackground;
+    border-bottom: 1px solid @titleBackground;
+}
+
+h1 {
+    background-color: @titleBackground;
+}
+h2 {
+    background-color: lighten(@titleBackground, 20%);
+    .titlestyle();
+}
+h3 {
+    background-color: lighten(@titleBackground, 40%);
+    .titlestyle();
+}
+
+dl {
+    display: inline-block;
+    width: 100%;
+    clear: both;
+}
+dt {
+    font-weight: bold;
+    width: 40%;
+    float: left;
+}
+dd {
+    margin-left: 40%;
+    width: 60%;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.btn {
+    display: inline-block;
+    margin: 0.5em;
+    text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(
+		top,
+		#ffffff 0%,
+		#ebebeb 50%,
+		#dbdbdb 50%,
+		#b5b5b5);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ffffff),
+		color-stop(0.50, #ebebeb),
+		color-stop(0.50, #dbdbdb),
+		to(#b5b5b5));
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border: 1px solid #949494;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,1);
+
+    &:hover {
+        color: #000;
+    }
+}
