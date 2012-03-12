@@ -1,57 +1,86 @@
+function init() {
+    alert ("Initilisation !!!");
+    isLocalStorageSupported ();
+}
+
 function isLocalStorageSupported () {
-    try {
-        var supported = false;
-        if (window['localStorage'] !== null)
-        {
-            supported = true;
-            alert('localstorage is supported !');
-            getAlfredNumber();
-        }
-        return supported;
-    } catch(e) {
-        return false;
+
+    if (localStorage) {
+        alert('localstorage is supported !');
+        getAlfredNumber();
+        getScore();
+    }
+    else {
         alert ('localstorage is not supported');
     }
 }
 
 function getAlfredNumber() {
-    // check if AlfredNumber allready exist
-    if (localStorage.getItem("alfredNumber") != '') {
-        // if not
-        alert("coucou");
 
-        var alfredNumber = Math.floor(Math.random() * 11);
-        localStorage.setItem('alfredNumber', alfredNumber);
-        alert('alfred : no ' + alfredNumber);
+    var alfredNumber;
+
+    // check if AlfredNumber allready exist
+    if (localStorage.getItem("alfredNumber")) {
+
+        // if yes
+        var alfredNumber = JSON.parse(localStorage.getItem('alfredNumber'));
+        alert('Alfred allready choose ' + alfredNumber);
 
     } else {
-        // if yes
-        var alfredNumber = localStorage.getItem('alfredNumber');
-        alert('alfred : yes ' + alfredNumber);
+
+        // if not
+        alert("Alfred has not allready choose a number");
+        alfredNumber = Math.floor(Math.random() * 10);
+        localStorage.setItem('alfredNumber', JSON.stringify(alfredNumber));
+        alert("Alfred choose " + alfredNumber);
 
     }
 
     // write result
-    document.getElementById('alfredNumber').innerHTML = alfredNumber;
+    document.getElementById('alfredNumber').innerText = alfredNumber;
 
-    getScore();
+    return alfredNumber;
 }
 
 function getScore() {
+
     // check if score allready exist
-    if (localStorage.getItem("score") == '') {
-        // if not
-        var score = 0;
-        localStorage.setItem('score', score);
-        alert('score : no');
+    if (localStorage.getItem("score")) {
+
+        // if yes, we get the stored score
+        var score = localStorage.getItem('score');
+        alert('your score is ' + score);
 
     } else {
-        // if yes
-        var score = localStorage.getItem('score');
-        alert('score : yes');
+
+        // if note we set it to 0
+        var score = 0;
+        localStorage.setItem('score', score);
+        alert('your score is ' + score);
 
     }
 
     // write result
-    document.getElementById('score').innerHTML = score;
+    document.getElementById('score').innerText = score;
+
+    return score;
 }
+
+function attempt(number) {
+
+    var score = JSON.parse(localStorage.getItem('score')) + 1;
+    localStorage.setItem('score', JSON.stringify(score));
+
+    // is choosen number Alfred's number ?
+    if (number == getAlfredNumber()) {
+        // yes !
+        alert('You win after ' + getScore() + ' attempt(s)');
+
+    }
+
+    // print score
+    getScore();
+
+}
+
+window.onload = init();
