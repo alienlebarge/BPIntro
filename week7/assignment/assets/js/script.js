@@ -1,9 +1,9 @@
 function init() {
-    alert ("Initilisation !!!");
-    isLocalStorageSupported ();
+    alert("Initialisation !!!");
+    isLocalStorageSupported();
 }
 
-function isLocalStorageSupported () {
+function isLocalStorageSupported() {
 
     if (localStorage) {
         alert('localstorage is supported !');
@@ -11,7 +11,7 @@ function isLocalStorageSupported () {
         getScore();
     }
     else {
-        alert ('localstorage is not supported');
+        alert('localstorage is not supported');
     }
 }
 
@@ -23,7 +23,7 @@ function getAlfredNumber() {
     if (localStorage.getItem("alfredNumber")) {
 
         // if yes
-        var alfredNumber = JSON.parse(localStorage.getItem('alfredNumber'));
+        alfredNumber = JSON.parse(localStorage.getItem('alfredNumber'));
         alert('Alfred allready choose ' + alfredNumber);
 
     } else {
@@ -44,17 +44,19 @@ function getAlfredNumber() {
 
 function getScore() {
 
+    var score;
+
     // check if score allready exist
     if (localStorage.getItem("score")) {
 
         // if yes, we get the stored score
-        var score = localStorage.getItem('score');
+        score = localStorage.getItem('score');
         alert('your score is ' + score);
 
     } else {
 
         // if note we set it to 0
-        var score = 0;
+        score = 0;
         localStorage.setItem('score', score);
         alert('your score is ' + score);
 
