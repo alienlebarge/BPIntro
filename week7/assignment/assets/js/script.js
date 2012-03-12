@@ -1,7 +1,4 @@
-function init() {
-    alert("Initialisation !!!");
-    isLocalStorageSupported();
-}
+
 
 function isLocalStorageSupported() {
 
@@ -82,6 +79,23 @@ function attempt(number) {
 
     // print score
     getScore();
+
+}
+
+function init() {
+    alert("Initialisation !!!");
+    //isLocalStorageSupported();
+
+    document.getElementById('choose-0').onclick = alert('you choose 0');
+    document.getElementById('choose-1').onclick = alert('you choose 1');
+    document.getElementById('choose-2').onclick = alert('you choose 2');
+    document.getElementById('choose-3').onclick = alert('you choose 3');
+    document.getElementById('choose-4').onclick = alert('you choose 4');
+    document.getElementById('choose-5').onclick = alert('you choose 5');
+    document.getElementById('choose-6').onclick = alert('you choose 6');
+    document.getElementById('choose-7').onclick = alert('you choose 7');
+    document.getElementById('choose-8').onclick = alert('you choose 8');
+    document.getElementById('choose-9').onclick = alert('you choose 9');
 
 }
 
