@@ -83,6 +83,7 @@ function reset() {
     localStorage.setItem('score', score);
     localStorage.removeItem('alfredNumber');
     alert('Storage is cleared');
+    // FIXME Alfred number storage need 2 clicks after reset();
     init();
 }
 
