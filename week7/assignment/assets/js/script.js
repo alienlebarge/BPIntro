@@ -22,7 +22,7 @@ function getAlfredNumber() {
         alert('Alfred allready choose ' + alfredNumber);
     } else {
         // if not
-        alert("Alfred has not allready choose a number");
+        alert("Alfred should choose a number");
 
         alfredNumber = Math.floor(Math.random() * 10);
         localStorage.setItem('alfredNumber', JSON.stringify(alfredNumber));
