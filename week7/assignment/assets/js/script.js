@@ -79,11 +79,10 @@ function attempt(number) {
 }
 
 function reset() {
-    score = 0
+    score = 0;
     localStorage.setItem('score', score);
     localStorage.removeItem('alfredNumber');
     alert('Storage is cleared');
-    // FIXME Alfred number storage need 2 clicks after reset();
     init();
 }
 
