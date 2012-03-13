@@ -1,5 +1,3 @@
-
-
 function isLocalStorageSupported() {
 
     if (Modernizr.localstorage) {
@@ -80,31 +78,38 @@ function attempt(number) {
 
 }
 
+function clearStorage (){
+    localStorage.clear();
+    alert('Storage is cleared');
+    getAlfredNumber();
+    getScore();
+}
+
 function init() {
     alert("Initialisation !!!");
+
     if (isLocalStorageSupported()) {
+
+        document.getElementById('choose-0').onclick = function(){attempt(0);};
+        document.getElementById('choose-1').onclick = function(){attempt(1);};
+        document.getElementById('choose-2').onclick = function(){attempt(2);};
+        document.getElementById('choose-3').onclick = function(){attempt(3);};
+        document.getElementById('choose-4').onclick = function(){attempt(4);};
+        document.getElementById('choose-5').onclick = function(){attempt(5);};
+        document.getElementById('choose-6').onclick = function(){attempt(6);};
+        document.getElementById('choose-7').onclick = function(){attempt(7);};
+        document.getElementById('choose-8').onclick = function(){attempt(8);};
+        document.getElementById('choose-9').onclick = function(){attempt(9);};
+        document.getElementById('clearStorage').onclick = function(){clearStorage();};
+
         //localstorage is supported
         getAlfredNumber();
         getScore();
-
-        document.getElementById('choose-0').onclick = alert('you choose 0');
-        document.getElementById('choose-1').onclick = alert('you choose 1');
-        document.getElementById('choose-2').onclick = alert('you choose 2');
-        document.getElementById('choose-3').onclick = alert('you choose 3');
-        document.getElementById('choose-4').onclick = alert('you choose 4');
-        document.getElementById('choose-5').onclick = alert('you choose 5');
-        document.getElementById('choose-6').onclick = alert('you choose 6');
-        document.getElementById('choose-7').onclick = alert('you choose 7');
-        document.getElementById('choose-8').onclick = alert('you choose 8');
-        document.getElementById('choose-9').onclick = alert('you choose 9');
 
     } else {
         //localstorage is not supported
         alert('localstorage is not supported');
     }
-
-
-
 }
 
-window.onload = init();
+window.onload = init;
