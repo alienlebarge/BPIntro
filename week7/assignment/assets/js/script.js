@@ -1,13 +1,6 @@
 function isLocalStorageSupported() {
 
-    if (Modernizr.localstorage) {
-        // window.localStorage is available!
-        return true;
-    } else {
-        // no native support for local storage :(
-        // maybe try Gears or another third-party solution
-        return false;
-    }
+    return Modernizr.localstorage;
 }
 
 function getAlfredNumber() {
