@@ -78,31 +78,55 @@ function attempt(number) {
 
 }
 
-function clearStorage (){
-    localStorage.clear();
+function reset() {
+    score = 0
+    localStorage.setItem('score', score);
+    localStorage.removeItem('alfredNumber');
     alert('Storage is cleared');
-    getAlfredNumber();
-    getScore();
+    init();
 }
 
 function init() {
-    alert("Initialisation !!!");
+    alert("Game initialisation !!!");
 
     if (isLocalStorageSupported()) {
 
-        document.getElementById('choose-0').onclick = function(){attempt(0);};
-        document.getElementById('choose-1').onclick = function(){attempt(1);};
-        document.getElementById('choose-2').onclick = function(){attempt(2);};
-        document.getElementById('choose-3').onclick = function(){attempt(3);};
-        document.getElementById('choose-4').onclick = function(){attempt(4);};
-        document.getElementById('choose-5').onclick = function(){attempt(5);};
-        document.getElementById('choose-6').onclick = function(){attempt(6);};
-        document.getElementById('choose-7').onclick = function(){attempt(7);};
-        document.getElementById('choose-8').onclick = function(){attempt(8);};
-        document.getElementById('choose-9').onclick = function(){attempt(9);};
-        document.getElementById('clearStorage').onclick = function(){clearStorage();};
-
         //localstorage is supported
+
+        document.getElementById('choose-0').onclick = function () {
+            attempt(0);
+        };
+        document.getElementById('choose-1').onclick = function () {
+            attempt(1);
+        };
+        document.getElementById('choose-2').onclick = function () {
+            attempt(2);
+        };
+        document.getElementById('choose-3').onclick = function () {
+            attempt(3);
+        };
+        document.getElementById('choose-4').onclick = function () {
+            attempt(4);
+        };
+        document.getElementById('choose-5').onclick = function () {
+            attempt(5);
+        };
+        document.getElementById('choose-6').onclick = function () {
+            attempt(6);
+        };
+        document.getElementById('choose-7').onclick = function () {
+            attempt(7);
+        };
+        document.getElementById('choose-8').onclick = function () {
+            attempt(8);
+        };
+        document.getElementById('choose-9').onclick = function () {
+            attempt(9);
+        };
+        document.getElementById('reset').onclick = function () {
+            reset();
+        };
+
         getAlfredNumber();
         getScore();
 
