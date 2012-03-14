@@ -1,19 +1,38 @@
+//variable
+@buttonColor: #6b96ad;
+
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1em;
+    margin: 0;
 }
 
 ul {
     display: inline;
     list-style: none;
+
     li {
-        border-bottom: thin solid black;
+
+        &:first-child {
+                border-top: thin solid darken(@buttonColor,10%);
+            }
+
+        border-bottom: thin solid darken(@buttonColor,10%);
+        
         a {
             text-decoration: none;
-            padding: 0.5em 0;
+            color: #fff;
+            padding-top: 0.5em 0;
+
+
+            background-color: @buttonColor;
 
             display: block;
             width: 100%;
+
+            &:hover {
+                background-color: lighten(@buttonColor, 10%);
+            }
         }
     }
 }

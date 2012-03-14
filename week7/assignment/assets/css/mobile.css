@@ -1,1 +1,1 @@
-body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:1em}ul{display:inline;list-style:none}ul li{border-bottom:thin solid black}ul li a{text-decoration:none;padding:.5em 0;display:block;width:100%}
+body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:1em;margin:0}ul{display:inline;list-style:none}ul li{border-bottom:thin solid #527c93}ul li:first-child{border-top:thin solid #527c93}ul li a{text-decoration:none;color:#fff;padding-top:.5em 0;background-color:#6b96ad;display:block;width:100%}ul li a:hover{background-color:#8cadbf}
