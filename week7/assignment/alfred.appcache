@@ -12,5 +12,4 @@ FALLBACK:
 / /offline.html
 
 NETWORK:
-http://*
-https://*
+*
