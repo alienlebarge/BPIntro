@@ -64,8 +64,11 @@ function attempt(number) {
     // is choosen number Alfred's number ?
     if (number == getAlfredNumber()) {
         // yes !
-        alert('You win after ' + getScore() + ' attempt(s)');
-        reset();
+        //alert('You win after ' + getScore() + ' attempt(s)');
+        // unhide congratulation message
+        document.getElementById('congrat').className='';
+        // hide list of button
+        document.getElementById('list').className='hide';
     }
 
     // print score
@@ -94,6 +97,10 @@ function reset() {
     for (i=0; i<=9; i++) {
         localStorage.setItem(i, 0);
     }
+    // hide congratulation message
+    document.getElementById('congrat').className='hide';
+    // unhide list of button
+    document.getElementById('list').className='';
     init();
 }
 
