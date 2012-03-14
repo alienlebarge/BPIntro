@@ -2,6 +2,7 @@
 @buttonColor: #6b96ad;
 @resetColor: #de7a7a;
 @topColor: #a1a1a1;
+@allreadyChoosenColor: #edb24c;
 
 //function
 .button (@bgColor, @textColor) {
@@ -53,6 +54,9 @@ ul {
             }
         a {
             .button (@buttonColor, lighten(@buttonColor,50%));
+        }
+        a.allreadyChoosen {
+            .button (@allreadyChoosenColor, darken(@allreadyChoosenColor,50%));
         }
     }
 }
