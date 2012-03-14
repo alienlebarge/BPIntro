@@ -1,0 +1,16 @@
+CACHE MANIFEST
+
+# Build 2012-03-12 v2
+
+CACHE:
+assets/css/mobile.css
+assets/css/desktop.css
+assets/js/style.js
+assets/js/modernizr-2.5.3.min.js
+assets/js/modernizr-2.5.3.min.js
+
+FALLBACK:
+/ /offline.html
+
+NETWORK:
+*
