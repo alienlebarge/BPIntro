@@ -24,7 +24,7 @@ function getAlfredNumber() {
     }
 
     // write result
-    document.getElementById('alfredNumber').innerText = alfredNumber;
+    document.getElementById('alfredNumber').innerHTML = alfredNumber;
 
     return alfredNumber;
 }
@@ -50,7 +50,7 @@ function getScore() {
     //alert('your score is ' + score);
 
     // write result
-    document.getElementById('score').innerText = score;
+    document.getElementById('score').innerHTML = score;
 
     return score;
 }
