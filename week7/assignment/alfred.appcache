@@ -3,7 +3,7 @@ CACHE MANIFEST
 # Build 2012-03-12
 
 CACHE:
-assets/css/mobile.css
+assets/css/style.css
 assets/js/script.js
 assets/js/modernizr-2.5.3.min.js
 index.html

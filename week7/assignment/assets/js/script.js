@@ -78,7 +78,7 @@ function attempt(number) {
 
 function getButtonColor () {
     // check wich number are allready choosen.
-    for (i=0; i<=9; i++) {
+    for (var i=0; i<=9; i++) {
         if (localStorage.getItem(i) == 1) {
             document.getElementById('choose-'+i).className='allreadyChoosen';
         } else {
@@ -89,12 +89,12 @@ function getButtonColor () {
 
 function reset() {
     // set score to 0
-    score = 0;
+    var score = 0;
     localStorage.setItem('score', score);
     // remove alfredNumber
     localStorage.removeItem('alfredNumber');
     // set all choosen number to 0
-    for (i=0; i<=9; i++) {
+    for (var i=0; i<=9; i++) {
         localStorage.setItem(i, 0);
     }
     // hide congratulation message
