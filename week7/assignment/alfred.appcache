@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Build 2012-03-12
+# Build 2012-03-23
 
 CACHE:
 assets/css/style.css
@@ -9,7 +9,7 @@ assets/js/modernizr-2.5.3.min.js
 index.html
 
 FALLBACK:
-/ /offline.html
+/ http://www.alienlebarge.ch/BPIntro/week7/assignment/offline.html
 
 NETWORK:
 *
